@@ -26,5 +26,5 @@ branches:
   only:
     - blog-source
 env:
- global:
-   - GH_REF: github.com/alex1221/alex1221.github.io.git
+  global:
+    - GH_REF: github.com/alex1221/alex1221.github.io.git
