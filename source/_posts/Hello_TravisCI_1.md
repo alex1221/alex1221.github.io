@@ -9,11 +9,11 @@ categories: Hexo
 
 1、在Github上搭建好自己的 Hexo 博客,将博客代码存在 master 中；
 
-![master](https://github.com/alex1221/resource/blob/master/images/hexo/travisCI/hexo-master.jpg)
+![master](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/hexo-master.jpg)
 
 2、并将源码放在某个分支上，如：blog-source；
 
-![blog-source](https://github.com/alex1221/resource/blob/master/images/hexo/travisCI/hexo-source.jpg)
+![blog-source](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/hexo-source.jpg)
 
 3、在github上生成Access Token；
 
@@ -29,19 +29,19 @@ E、按照下图创建Access Token，然后将生成好的临牌拷贝下来。
 
 1、打开 [Travis CI](https://travis-ci.org/) 网站，利用Github账号登录；
 
-![login](https://github.com/alex1221/resource/blob/master/images/hexo/travisCI/login.jpg)
+![login](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/login.jpg)
 
 2、选择 Hexo 博客的代码库；
 
-![op00](https://github.com/alex1221/resource/blob/master/images/hexo/travisCI/op00.jpg)
+![op00](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/op00.jpg)
 
 3、激活代码库；
 
-![激活](https://github.com/alex1221/resource/blob/master/images/hexo/travisCI/op01.jpg)
+![激活](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/op01.jpg)
 
 3、并点击 `More options` 中的 `settings` 按钮，进入设置页面；
 
-![settings](https://github.com/alex1221/resource/blob/master/images/hexo/travisCI/setting.jpg)
+![settings](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/setting.jpg)
 
 a、并按图中选中 `General` 中的 `Build only if .travis.yml is present` 和 `Build pushed branches`；
 
@@ -49,7 +49,7 @@ b、在 `Environment Variables` 中添加口令，`Name` 自定义一个，我�
 
 4、源代码的仓库里创建一个.travis.yml配置文件，放到源代码的根目录；
 
-![travis](https://github.com/alex1221/resource/blob/master/images/hexo/travisCI/travis.jpg)
+![travis](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/travis.jpg)
 
 内容如下：
 
@@ -95,7 +95,15 @@ B、`branches` 下面的 `only` 是你放源码的分支名字；
 
 C、`env` 下面的 `global` 变量 **GH_REF** 是你自己的博客的 Github 地址（Clone with SSH）。
 
-5、测试并提交代码到 Github 中，然后去查看 Travis CI 
+5、测试并提交代码到 Github 中，然后去查看 Travis CI ；
+
+自动化构建中：
+![building](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/travis_building.jpg)
+
+构建结束：
+![builded](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/travis_builded.jpg)
+
+6、构建完成后，博客上就可以看见这个文章了。
 
 
 
