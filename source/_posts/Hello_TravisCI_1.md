@@ -23,7 +23,7 @@ C、点击 `Personal access tokens`；
 D、点击 `Generate new token`；
 E、按照下图创建Access Token，然后将生成好的临牌拷贝下来。
 
-![Access Token]()
+![Access Token](https://raw.githubusercontent.com/alex1221/resource/master/images/hexo/travisCI/access_token.jpg)
 
 ## Travis CI 上的设置
 
